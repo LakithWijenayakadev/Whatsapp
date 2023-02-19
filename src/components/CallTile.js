@@ -6,7 +6,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 
 export function CallTile({ ProfilePic, Name, Time, Message, onPressTile,onPressCall,arrow,arrowColor }) {
     return (
-
+// Call tiles component
         <TouchableOpacity
 
             onPress={() => onPressTile()}
