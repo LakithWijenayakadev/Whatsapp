@@ -4,9 +4,9 @@ import { Avatar } from 'react-native-paper';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
-export function CallTile({ ProfilePic, Name, Time, Message, onPressTile,onPressCall,arrow,arrowColor }) {
+export function CallTile({ ProfilePic, Name, Time, Message, onPressTile, onPressCall, arrow, arrowColor }) {
     return (
-// Call tiles component
+        // Call tiles component
         <TouchableOpacity
 
             onPress={() => onPressTile()}
@@ -20,15 +20,15 @@ export function CallTile({ ProfilePic, Name, Time, Message, onPressTile,onPressC
                         <Text style={styles.name}>{Name}</Text>
                     </View>
                     <TouchableOpacity
-                      onPress={() => onPressCall()}
-                     style={{ flex: 0.2, alignItems: 'center', justifyContent: 'center', }}>
-                       
-                    <MaterialIcons name="call" color="#128C7E" size={24} />
+                        onPress={() => onPressCall()}
+                        style={{ flex: 0.2, alignItems: 'center', justifyContent: 'center', }}>
+
+                        <MaterialIcons name="call" color="#128C7E" size={24} />
 
                     </TouchableOpacity>
                 </View>
-                <View style={{ height: 23, flexDirection:'row',alignItems:'center' }}>
-                <MaterialCommunityIcons name={arrow} color={arrowColor} size={15} />
+                <View style={{ height: 23, flexDirection: 'row', alignItems: 'center' }}>
+                    <MaterialCommunityIcons name={arrow} color={arrowColor} size={15} />
                     <Text style={styles.message}>{Message}</Text>
                 </View>
             </View>
@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     card: {
         height: 68,
         flexDirection: 'row',
-        marginTop:5
+        marginTop: 5
     },
     Profile: {
         flex: 0.2,
@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
     message: {
         fontSize: 13,
         color: '#808080',
-        marginLeft:8
+        marginLeft: 8
     }
 
 

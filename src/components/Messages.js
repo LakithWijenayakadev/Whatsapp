@@ -11,7 +11,7 @@ export function Messages({ Message, TileAlign, Time }) {
         <TouchableOpacity>
             <View style={[styles.ChatBox, { backgroundColor: TileAlign == 1 ? COLORS.white : COLORS.sender }, { alignSelf: TileAlign == 1 ? 'flex-start' : 'flex-end' }]} >
                 <Text style={{ marginHorizontal: 5, color: COLORS.black, fontSize: 15, textAlign: TileAlign == 1 ? 'left' : 'right' }}>{Message}</Text>
-              
+
                 <View style={{ flexDirection: 'row', alignSelf: 'flex-end', }}>
                     <Text style={styles.time}>{Time}</Text>
                     {TileAlign == 2 && <Ionicons name="checkmark-done-sharp" color={COLORS.bluetick} size={18} />}

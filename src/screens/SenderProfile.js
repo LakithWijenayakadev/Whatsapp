@@ -93,12 +93,12 @@ const SenderProfile = ({ navigation }) => {
 
                 </View>
 
-                <View style={{ backgroundColor: COLORS.white, height: (window.width) * 0.2, marginVertical: 20, elevation: 1, justifyContent: 'center', paddingHorizontal: 15 }}>
+                <View style={styles.description}>
                     <Text style={{ fontSize: 17, color: COLORS.black }}>Hey there! I am using WhatsApp.</Text>
                 </View>
 
 
-                <View style={{ backgroundColor: COLORS.white, height: (window.width) * 0.2, marginBottom: 20, elevation: 1, alignItems: 'center', paddingHorizontal: 20, flexDirection: 'row', justifyContent: 'space-between' }}>
+                <View style={styles.mediaCategoryText}>
                     <Text style={{ fontSize: 17, color: COLORS.black }}>Media, links, and docs.</Text>
                     <Text style={{ fontSize: 17, color: COLORS.inputField }}>1 {">"}</Text>
                 </View>
@@ -173,7 +173,6 @@ const SenderProfile = ({ navigation }) => {
 
                     </TouchableOpacity>
 
-
                 </View>
 
 
@@ -210,7 +209,6 @@ export default SenderProfile
 
 const styles = StyleSheet.create({
     Profile: {
-
         justifyContent: 'center',
         alignItems: 'center'
     },
@@ -219,5 +217,23 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         marginVertical: 15,
         alignItems: 'center'
+    },
+    description: {
+        backgroundColor: COLORS.white,
+        height: (window.width) * 0.2,
+        marginVertical: 20,
+        elevation: 1,
+        justifyContent: 'center',
+        paddingHorizontal: 15
+    },
+    mediaCategoryText: {
+        backgroundColor: COLORS.white,
+        height: (window.width) * 0.2,
+        marginBottom: 20,
+        elevation: 1,
+        alignItems: 'center',
+        paddingHorizontal: 20,
+        flexDirection: 'row',
+        justifyContent: 'space-between'
     }
 })

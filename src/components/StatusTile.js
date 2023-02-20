@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, Dimensions, FlatList, Image, TouchableOpacity }
 import { Avatar } from 'react-native-paper';
 import COLORS from "../consts/colors";
 
-export function StatusTile({ ProfilePic, Name,  Message, onPress }) {
+export function StatusTile({ ProfilePic, Name, Message, onPress }) {
     return (
 
         <View
@@ -19,7 +19,7 @@ export function StatusTile({ ProfilePic, Name,  Message, onPress }) {
                 }}>
                     <View style={{
                         borderRadius: 100,
-                        backgroundColor:COLORS.white,
+                        backgroundColor: COLORS.white,
                         justifyContent: 'center',
                         alignItems: 'center',
                         height: 53, width: 53
